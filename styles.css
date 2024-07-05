@@ -1,0 +1,182 @@
+/* General styles */
+body {
+    background-color: #121219;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #111111; 
+    padding: 50px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1e90ff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+nav ul li a:hover {
+    color: #1e90ff;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: rgba(30, 30, 30, 0.9);
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+    position: relative; /* Add position relative */
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.donate-button {
+    display: inline-block;
+    padding: 25px 50px; //10,20
+    background-color: #0070ba;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.donate-button:hover {
+    background-color: #005792;
+}
+
+.view-counter {
+    margin-top: 20px;
+    font-size: 1.2em;
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation for clicked navigation links */
+@keyframes linkClicked {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Add styles for the animation class */
+.nav-link.clicked {
+    animation: linkClicked 0.5s ease;
+}
+
+/* Image styles */
+.section-image {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px; /* Adjust the width as needed */
+    height: auto;
+}
