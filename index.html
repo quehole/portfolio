@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808">
+    <meta name="description" content="Mohammad Abdullah  /  Full-Stack Developer building web applications, Discord systems, automation and custom tools.">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <title>Mohammad Abdullah</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="boot-screen" id="boot-screen" aria-hidden="true">
+        <div class="boot-inner">
+            <div class="boot-mark">MA.</div>
+            <div class="boot-line"><span>BOOT</span><i></i><strong id="boot-message">INITIALIZING INTERFACE</strong></div>
+            <div class="boot-progress"><i id="boot-progress-bar"></i></div>
+        </div>
+    </div>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="custom-cursor" aria-hidden="true"></div>
+    <div class="custom-cursor-dot" aria-hidden="true"></div>
+
+    <nav class="site-nav">
+        <div class="nav-content">
+            <div class="nav-left">
+                <a class="logo" href="#top" aria-label="Mohammad Abdullah home"><img src="logo.svg" alt="Mohammad Abdullah logo"></a>
+                <span class="nav-status"><i></i> AVAILABLE</span>
+                <span class="nav-clock" id="clock">00:00:00</span>
+            </div>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#work">Work</a>
+                <a href="#github">GitHub</a>
+                <a href="#lab">Lab</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="nav-right">
+                <button class="nav-control" id="focus-toggle" type="button" aria-pressed="false">FOCUS</button>
+                <div class="sound-control" id="sound-control">
+                    <button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="false" aria-label="Undeafen ambient sound" title="Undeafen ambient sound"><svg class="sound-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13v-1a8 8 0 0 1 16 0v1M4 13v3a2 2 0 0 0 2 2h1v-5H4Zm16 0v3a2 2 0 0 1-2 2h-1v-5h3Z"/><path class="sound-slash" d="M4 4l16 16"/></svg></button>
+                    <label class="sound-select-wrap" for="sound-track">
+                        <span class="sr-only">Background audio</span>
+                        <select id="sound-track" aria-label="Choose background audio">
+                            <option value="brown-noise.mp3">BROWN NOISE</option>
+                            <option value="rain.mp3">RAIN</option>
+                            <option value="deep-space.mp3">DEEP SPACE</option>
+                            <option value="night-drive.mp3">NIGHT DRIVE</option>
+                            <option value="low-frequency.mp3">LOW FREQUENCY</option>
+                        </select>
+                    </label>
+                    <label class="volume-control" for="sound-volume">
+                        <span class="volume-label">VOL <span id="sound-volume-value">18%</span></span>
+                        <span class="volume-slider" id="volume-slider"><span class="volume-slider-track"><span class="volume-slider-fill"></span><span class="volume-slider-thumb"></span></span><input id="sound-volume" type="range" min="0" max="100" value="18" step="1" aria-label="Background audio volume"></span>
+                    </label>
+                    <div class="audio-now-playing" id="audio-now-playing" aria-live="polite">
+                        <div class="audio-now-playing-copy">
+                            <span>NOW PLAYING</span>
+                            <strong id="audio-track-name">BROWN NOISE</strong>
+                        </div>
+                        <div class="audio-visualizer" id="audio-visualizer" aria-hidden="true">
+                            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                        </div>
+                    </div>
+                </div>
+                <button class="command-trigger" id="command-trigger" type="button" aria-label="Open command palette">⌘K</button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="top">
+        <section class="hero">
+            <div class="liquid-orb" aria-hidden="true">
+                <div class="orb-core"></div>
+                <div class="orb-highlight"></div>
+                <div class="orb-ring orb-ring-a"></div>
+                <div class="orb-ring orb-ring-b"></div>
+            </div>
+
+            <div class="hero-copy reveal">
+                <div class="eyebrow"><span>01</span> DIGITAL BUILDER / DHAKA, BD</div>
+
+                <h1>
+                    Mohammad<br>
+                    <span>Abdullah</span>
+                </h1>
+
+                <div class="hero-bottom">
+                    <div>
+                        <p class="role">FULL-STACK DEVELOPER</p>
+                        <p class="hero-description">
+                            I build web applications, Discord systems, automation
+                            and custom tools  /  turning ideas into things that work.
+                        </p>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#work">
+                            <span>Explore work</span>
+                            <b>↓</b>
+                        </a>
+                        <a class="button button-ghost" href="mailto:quehole13@gmail.com">
+                            <span>Get in touch</span>
+                            <b>↗</b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section system-status-section">
+            <div class="section-header reveal">
+                <span class="section-number">02</span>
+                <h2>System Status</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="system-grid reveal">
+                <div class="system-panel">
+                    <span>WEBSITE</span><strong><i class="status-led online"></i> ONLINE</strong>
+                </div>
+                <div class="system-panel">
+                    <span>GITHUB</span><strong id="github-api-status"><i class="status-led"></i> CHECKING</strong>
+                </div>
+                <div class="system-panel">
+                    <span>DISCORD</span><strong id="system-discord-status"><i class="status-led"></i> CONNECTING</strong>
+                </div>
+                <div class="system-panel">
+                    <span>LOCAL TIME</span><strong id="system-time">--:--:--</strong>
+                </div>
+                <div class="system-panel system-panel-action">
+                    <span>DIAGNOSTICS</span><button id="diagnostics-trigger" type="button">RUN CHECK <b>→</b></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section now-building" id="building">
+            <div class="section-header reveal">
+                <span class="section-number">03</span>
+                <h2>Now Building</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="building-card reveal">
+                <div>
+                    <span class="building-kicker">ACTIVE / PERSONAL DEVELOPMENT</span>
+                    <h3>SZH</h3>
+                    <p>Continuing to shape the platform, interface and supporting systems while experimenting with new ideas.</p>
+                </div>
+                <div class="building-meta">
+                    <span>FOCUS</span><strong>WEB / SYSTEMS</strong>
+                    <span>STATE</span><strong class="building-live"><i></i> IN DEVELOPMENT</strong>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="section-header reveal">
+                <span class="section-number">03</span>
+                <h2>Profile</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="profile-grid">
+                <div class="profile-statement reveal">
+                    <p class="large-copy">
+                        A developer who likes making <em>useful things</em>,
+                        exploring unfamiliar technology, and pushing small ideas
+                        until they become real projects.
+                    </p>
+                    <p class="muted-copy">
+                        My work sits between engineering and experimentation:
+                        practical enough to ship, curious enough to stay interesting.
+                    </p>
+                </div>
+
+                <div class="profile-aside reveal">
+                    <div class="data-row">
+                        <span>FOCUS</span>
+                        <strong>Full-Stack / Systems</strong>
+                    </div>
+                    <div class="data-row">
+                        <span>STATUS</span>
+                        <strong class="live"><i></i> Building</strong>
+                    </div>
+                    <div class="data-row">
+                        <span>CONTACT</span>
+                        <a href="mailto:quehole13@gmail.com">quehole13@gmail.com ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-terminal reveal">
+                <div class="about-terminal-head"><span>PROFILE / INTERACTIVE</span><span>TYPE A COMMAND</span></div>
+                <div class="about-terminal-output" id="about-terminal-output">Try <strong>whoami</strong>, <strong>focus</strong>, <strong>experience</strong> or <strong>stack</strong>.</div>
+                <form class="about-terminal-input" id="about-terminal-form">
+                    <span>$</span><input id="about-terminal-command" autocomplete="off" spellcheck="false" placeholder="whoami" aria-label="About terminal command">
+                </form>
+            </div>
+        </section>
+
+        <section class="section services-section" id="services">
+            <div class="services-intro reveal">
+                <h2>Services built for <span>impact</span></h2>
+                <p>End-to-end studio capabilities  /  we take ideas from concept to<br class="services-break"> deployment with the same obsessive care at every step.</p>
+            </div>
+
+            <div class="services-grid reveal">
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.8 12h16.4M12 3.5c2.2 2.35 3.25 5.2 3.25 8.5S14.2 18.15 12 20.5C9.8 18.15 8.75 15.3 8.75 12S9.8 5.85 12 3.5ZM4.9 7.8h14.2M4.9 16.2h14.2"/></svg>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Performance-obsessed, visually exceptional web applications. From marketing sites to complex web apps  /  every pixel intentional, every interaction polished.</p>
+                    <ul>
+                        <li>Next.js / React / Vue</li>
+                        <li>Edge-deployed, 100 Lighthouse</li>
+                        <li>Headless CMS Integration</li>
+                        <li>API Design &amp; Integration</li>
+                        <li>Animation &amp; Micro-interactions</li>
+                    </ul>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M7.2 8.2h9.6l2.1 2.3-.8 5.1-3.3-.7-2.8 1.9-2.8-1.9-3.3.7-.8-5.1 2.1-2.3Z"/><path d="M8.1 5.2v3M6.6 6.7h3M16.8 6.1l.1.1M18.2 7.4l.1.1"/></svg>
+                    </div>
+                    <h3>Game Development</h3>
+                    <p>Battle-tested game systems built for scale. Multiplayer architectures, Roblox experiences, and custom game engines designed for hundreds of thousands of concurrent players.</p>
+                    <ul>
+                        <li>Roblox / Lua Game Systems</li>
+                        <li>Multiplayer Networking</li>
+                        <li>Server-Authoritative Logic</li>
+                        <li>Economy &amp; Progression Design</li>
+                        <li>Anti-Cheat Architecture</li>
+                    </ul>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="m12 3 1.55 5.45L19 10l-5.45 1.55L12 17l-1.55-5.45L5 10l5.45-1.55L12 3Z"/><path d="m18.2 15.8.65 2.35 2.35.65-2.35.65-.65 2.35-.65-2.35-2.35-.65 2.35-.65.65-2.35Z"/></svg>
+                    </div>
+                    <h3>UI / UX Design</h3>
+                    <p>Interfaces that don't just look exceptional  /  they convert, retain, and delight. Every design decision rooted in behavior, psychology, and craft.</p>
+                    <ul>
+                        <li>Design Systems at Scale</li>
+                        <li>Figma Prototyping</li>
+                        <li>User Flow Optimization</li>
+                        <li>Component Library Creation</li>
+                        <li>Brand Identity &amp; Motion</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section capabilities">
+            <div class="section-header reveal">
+                <span class="section-number">04</span>
+                <h2>Technical Arsenal</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-grid reveal">
+                <div class="skill-column">
+                    <span class="skill-label">LANGUAGES</span>
+                    <div class="skill-list">
+                        <span>JavaScript</span>
+                        <span>TypeScript</span>
+                        <span>Python</span>
+                        <span>Java</span>
+                    </div>
+                </div>
+
+                <div class="skill-column">
+                    <span class="skill-label">WEB / RUNTIME</span>
+                    <div class="skill-list">
+                        <span>Node.js</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-column">
+                    <span class="skill-label">TOOLS / SYSTEMS</span>
+                    <div class="skill-list">
+                        <span>Discord.js</span>
+                        <span>VS Code</span>
+                        <span>Automation</span>
+                        <span>Custom Tools</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section constellation-section" id="stack-map">
+            <div class="section-header reveal">
+                <span class="section-number">05</span>
+                <h2>Skill Constellation</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="constellation reveal" aria-label="Interactive technology map">
+                <button class="constellation-node node-js" data-skill="JavaScript">JavaScript</button>
+                <button class="constellation-node node-ts" data-skill="TypeScript">TypeScript</button>
+                <button class="constellation-node node-node" data-skill="Node.js">Node.js</button>
+                <button class="constellation-node node-python" data-skill="Python">Python</button>
+                <button class="constellation-node node-discord" data-skill="Discord.js">Discord.js</button>
+                <button class="constellation-node node-web" data-skill="Web">Web</button>
+                <div class="constellation-core">BUILD<br><span>SYSTEMS</span></div>
+                <div class="constellation-info" id="constellation-info">SELECT A NODE TO INSPECT</div>
+            </div>
+        </section>
+
+        <section id="work" class="section work">
+            <div class="section-header reveal">
+                <span class="section-number">05</span>
+                <h2>Selected Work</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <article class="featured-project reveal">
+                <div class="project-topline">
+                    <span>01 / ACTIVE PROJECT</span>
+                    <span>STUDIO / WEB / SYSTEMS</span>
+                </div>
+
+                <div class="project-main">
+                    <div>
+                        <p class="project-kicker">INDEPENDENT DEVELOPMENT STUDIO</p>
+                        <h3>SZH<span>.</span></h3>
+                    </div>
+
+                    <p class="project-description">
+                        An independent development organization focused on building
+                        interactive digital projects, systems and experiments.
+                    </p>
+                </div>
+
+                <div class="project-footer">
+                    <div class="project-stack">
+                        <span>Development</span>
+                        <span>Interactive Web</span>
+                        <span>Systems</span>
+                    </div>
+
+                    <div class="project-actions"><button class="project-terminal-link" type="button" data-project="szh">Open case file <span>→</span></button><a class="project-link" href="https://quehole.github.io/szh-website/" target="_blank" rel="noopener">Visit SZH <span>↗</span></a></div>
+                </div>
+            </article>
+
+            <article class="featured-project reveal">
+                <div class="project-topline">
+                    <span>02 / ACTIVE PROJECT</span>
+                    <span>DISCORD / BOT / SYSTEMS</span>
+                </div>
+
+                <div class="project-main">
+                    <div>
+                        <p class="project-kicker">MULTIFUNCTIONAL DISCORD BOT</p>
+                        <h3>Pretend<span>.</span></h3>
+                    </div>
+
+                    <p class="project-description">
+                        A multifunctional Discord bot built as a practical system for
+                        communities, automation and everyday server tools.
+                    </p>
+                </div>
+
+                <div class="project-footer">
+                    <div class="project-stack">
+                        <span>Discord</span>
+                        <span>Bot Systems</span>
+                        <span>Automation</span>
+                    </div>
+
+                    <div class="project-actions"><a class="project-link" href="https://quehole.github.io/pretend/" target="_blank" rel="noopener">Visit Pretend <span>↗</span></a></div>
+                </div>
+            </article>
+
+            <div class="work-note reveal">
+                <span>MORE IN DEVELOPMENT</span>
+                <p>
+                    Other experiments will appear here as they become ready.
+                </p>
+            </div>
+        </section>
+
+        <section class="section presence">
+            <div class="section-header reveal">
+                <span class="section-number">06</span>
+                <h2>Live Presence</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="presence-card reveal">
+                <div class="presence-profile">
+                    <div class="avatar-wrapper">
+                        <img id="discord-avatar" src="" alt="" class="avatar">
+                        <div id="status-indicator" class="status-dot"></div>
+                    </div>
+
+                    <div>
+                        <p class="presence-label">DISCORD</p>
+                        <h3 id="discord-name">Connecting...</h3>
+                        <p id="discord-status" class="presence-status">Establishing presence...</p>
+                    </div>
+                </div>
+
+                <div class="spotify-info" id="spotify-container">
+                    <div class="spotify-mark" aria-hidden="true">♪</div>
+                    <div>
+                        <p class="presence-label">NOW PLAYING</p>
+                        <p id="spotify-song">No activity found</p>
+                        <p id="spotify-artist"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section github-section" id="github">
+            <div class="section-header reveal">
+                <span class="section-number">07</span>
+                <h2>GitHub Activity</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="github-grid reveal">
+                <div class="github-stats">
+                    <div class="github-stat"><span>PUBLIC REPOS</span><strong id="github-repos">--</strong></div>
+                    <div class="github-stat"><span>FOLLOWERS</span><strong id="github-followers">--</strong></div>
+                    <div class="github-stat"><span>FOLLOWING</span><strong id="github-following">--</strong></div>
+                    <div class="github-stat"><span>ACCOUNT</span><strong id="github-account-age">--</strong></div>
+                </div>
+                <div class="github-recent">
+                    <div class="github-recent-head"><span>RECENT DEVELOPMENT</span><a href="https://github.com/quehole" target="_blank" rel="noopener">OPEN GITHUB ↗</a></div>
+                    <label class="repo-search"><span>FILTER</span><input id="repo-search" type="search" placeholder="search repositories..." autocomplete="off"></label>
+                    <div id="github-repo-list" class="repo-list"><span class="terminal-muted">Fetching public repositories...</span></div>
+                    <div class="github-development-note" id="github-development-note">Public repository activity is read live from GitHub.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section lab-section" id="lab">
+            <div class="section-header reveal">
+                <span class="section-number">10</span>
+                <h2>Lab / Experiments</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="lab-grid reveal">
+                <article class="lab-card"><span>LAB / 001</span><strong>LIQUID INTERFACE</strong><p>Experimental motion, cursor interaction and organic geometry.</p><button type="button" class="lab-expand" data-lab="liquid">INSPECT <b>→</b></button></article>
+                <article class="lab-card"><span>LAB / 002</span><strong>DISCORD SYSTEMS</strong><p>Presence, automation and event-driven tooling.</p><button type="button" class="lab-expand" data-lab="discord">INSPECT <b>→</b></button></article>
+                <article class="lab-card"><span>LAB / 003</span><strong>UNKNOWN</strong><p>Something currently being built, tested or broken.</p><button type="button" class="lab-expand" data-lab="unknown">INSPECT <b>→</b></button></article>
+            </div>
+            <div class="lab-inspector" id="lab-inspector" aria-hidden="true"><div><span id="lab-inspector-label">LAB</span><strong id="lab-inspector-title">EXPERIMENT</strong><p id="lab-inspector-copy"></p></div><button id="lab-inspector-close" type="button">ESC</button></div>
+        </section>
+
+        <section class="section achievements">
+            <div class="section-header reveal">
+                <span class="section-number">08</span>
+                <h2>Milestones</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="milestone-grid reveal">
+                <div class="milestone">
+                    <span>01</span>
+                    <strong>SZH</strong>
+                    <p>Founded and actively developing an independent project organization.</p>
+                </div>
+                <div class="milestone">
+                    <span>02</span>
+                    <strong>PRETEND</strong>
+                    <p>Built and actively developing a multifunctional Discord bot for community tooling and automation.</p>
+                </div>
+                <div class="milestone muted-milestone">
+                    <span>03</span>
+                    <strong>IN PROGRESS</strong>
+                    <p>More milestones will be added as projects ship.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="contact-inner reveal">
+                <span class="contact-label">09 / CONNECT</span>
+                <h2>Have an idea?<br><em>Let's build it.</em></h2>
+                <a class="contact-email" href="mailto:quehole13@gmail.com">
+                    quehole13@gmail.com <span>↗</span>
+                </a>
+            </div>
+
+            <div class="social-links reveal">
+                <a href="https://github.com/quehole" target="_blank" rel="noopener">GitHub <span>↗</span></a>
+                <a href="https://discord.com/users/794143054117601310" target="_blank" rel="noopener">Discord <span>↗</span></a>
+                <a href="https://www.instagram.com/queholes" target="_blank" rel="noopener">Instagram <span>↗</span></a>
+                <a href="https://www.youtube.com/@quehole" target="_blank" rel="noopener">YouTube <span>↗</span></a>
+                <a href="https://www.twitch.tv/quehole" target="_blank" rel="noopener">Twitch <span>↗</span></a>
+                <a href="https://www.paypal.com/paypalme/rulerxd" target="_blank" rel="noopener">Support <span>↗</span></a>
+            </div>
+        </section>
+    </main>
+
+    <section class="section terminal-section" id="terminal">
+        <div class="section-header reveal">
+            <span class="section-number">11</span>
+            <h2>Command Line</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="terminal-window reveal">
+            <div class="terminal-bar"><div class="terminal-lights"><i></i><i></i><i></i></div><span>abdullah@portfolio:~</span><button id="terminal-clear" type="button">CLEAR</button></div>
+            <div class="terminal-output" id="terminal-output" aria-live="polite"><div class="terminal-line terminal-muted">Type <span>help</span> to see available commands.</div></div>
+            <form class="terminal-input-row" id="terminal-form">
+                <label for="terminal-input">$</label><input id="terminal-input" type="text" autocomplete="off" spellcheck="false" placeholder="type a command..." aria-label="Terminal command">
+            </form>
+            <div class="terminal-help"><span>CTRL + / focus terminal · TAB autocomplete</span><button id="open-palette-from-terminal" type="button">CTRL + K / COMMAND PALETTE</button></div>
+        </div>
+    </section>
+
+    <div class="project-terminal" id="project-terminal" aria-hidden="true">
+        <div class="project-terminal-dialog" role="dialog" aria-modal="true">
+            <div class="terminal-bar"><div class="terminal-lights"><i></i><i></i><i></i></div><span>casefile://szh</span><button id="project-terminal-close" type="button">ESC</button></div>
+            <div class="project-terminal-body" id="project-terminal-body"></div>
+            <div class="project-terminal-input"><span>$</span><input id="project-terminal-input" autocomplete="off" spellcheck="false" placeholder="type overview, architecture, technology, website..." aria-label="Project case file command"></div>
+        </div>
+    </div>
+
+    <div class="diagnostics-modal" id="diagnostics-modal" aria-hidden="true">
+        <div class="diagnostics-dialog" role="dialog" aria-modal="true" aria-labelledby="diagnostics-title">
+            <div class="terminal-bar"><div class="terminal-lights"><i></i><i></i><i></i></div><span id="diagnostics-title">diagnostics://portfolio</span><button id="diagnostics-close" type="button">ESC</button></div>
+            <div class="diagnostics-body" id="diagnostics-body"></div>
+        </div>
+    </div>
+
+    <div class="developer-mode-indicator" id="developer-mode-indicator">DEVELOPER MODE / ENABLED</div>
+    <div class="build-mode-indicator" id="build-mode-indicator">BUILD MODE / INTERNALS EXPOSED</div>
+    <div class="shortcut-overlay" id="shortcut-overlay" aria-hidden="true">
+        <div class="shortcut-dialog">
+            <div class="terminal-bar"><div class="terminal-lights"><i></i><i></i><i></i></div><span>shortcuts://portfolio</span><button id="shortcut-close" type="button">ESC</button></div>
+            <div class="shortcut-grid">
+                <span>CTRL + K</span><b>COMMAND PALETTE</b><span>CTRL + /</span><b>TERMINAL</b><span>F</span><b>FOCUS MODE</b><span>J / K</span><b>SCROLL</b><span>?</span><b>SHORTCUTS</b><span>CTRL + SHIFT + D</span><b>BUILD MODE</b>
+            </div>
+        </div>
+    </div>
+
+    <div class="command-palette" id="command-palette" aria-hidden="true">
+        <div class="palette-backdrop" data-palette-close></div>
+        <div class="palette-dialog" role="dialog" aria-modal="true" aria-labelledby="palette-title">
+            <div class="palette-header">
+                <div>
+                    <span class="palette-kicker">COMMAND</span>
+                    <h2 id="palette-title">What do you want to open?</h2>
+                </div>
+                <button id="palette-close" class="palette-close" type="button" aria-label="Close command palette">ESC</button>
+            </div>
+            <div class="palette-search-wrap">
+                <span>/</span>
+                <input id="palette-search" type="search" autocomplete="off" placeholder="Search commands..." aria-label="Search commands">
+                <kbd>ESC</kbd>
+            </div>
+            <div class="palette-list" id="palette-list" role="listbox" aria-label="Commands"></div>
+            <div class="palette-footer">
+                <span>↑↓ navigate</span>
+                <span>↵ select</span>
+                <span>ESC close</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="section logs-section" id="logs">
+        <div class="section-header reveal">
+            <span class="section-number">12</span>
+            <h2>System Log</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="system-log reveal" id="system-log" aria-live="polite"></div>
+    </section>
+
+    <footer>
+        <div>MOHAMMAD ABDULLAH</div>
+        <div>© 2026 / BUILT WITH INTENT</div>
+        <div class="footer-hint">SOUND IS OPTIONAL / FOCUS WITH <span>F</span></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
