@@ -1,0 +1,179 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#080808"><meta name="description" content="Mohammad Abdullah / developer environment"><link rel="icon" type="image/svg+xml" href="assets/logo.svg"><script>try{if(localStorage.getItem("portfolio-theme")==="light")document.documentElement.classList.add("light-theme-preload")}catch{}</script><title>About / Mohammad Abdullah</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body data-page="about"><div class="boot-screen" id="boot-screen" aria-hidden="true"><div class="boot-inner"><div class="boot-mark"><img src="assets/logo.svg" alt="Mohammad Abdullah logo"></div><div class="boot-line"><span>BOOT</span><i></i><strong id="boot-message">INITIALIZING INTERFACE</strong></div><div class="boot-progress"><i id="boot-progress-bar"></i></div></div></div><div class="noise" aria-hidden="true"></div><div class="custom-cursor" aria-hidden="true"></div><div class="custom-cursor-dot" aria-hidden="true"></div><nav class="site-nav"><div class="nav-content"><div class="nav-left"><a class="logo" href="index.html" aria-label="Mohammad Abdullah home"><img src="assets/logo.svg" alt="Mohammad Abdullah logo"></a><span class="nav-status"><i></i> AVAILABLE</span><span class="nav-clock" id="clock">00:00:00</span></div><div class="nav-links"><a data-page="home" href="index.html">Home</a><a data-page="about" href="about.html">About</a><a data-page="work" href="work.html">Work</a><a data-page="system" href="system.html">System</a><a data-page="lab" href="lab.html">Lab</a><a data-page="contact" href="contact.html">Contact</a></div><div class="nav-right"><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false" title="Switch theme"><svg viewBox="0 0 24 24" aria-hidden="true"><circle class="sun-core" cx="12" cy="12" r="3.5"></circle><g class="sun-rays"><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6-1.6"></path></g><path class="moon-shape" d="M19 14.4A7.2 7.2 0 0 1 9.6 5a7.7 7.7 0 1 0 9.4 9.4Z"></path></svg></button><button class="nav-control" id="focus-toggle" type="button" aria-pressed="false" aria-label="Enable focus mode" title="Enable focus mode"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2"></circle><path d="M12 2.5v4M12 17.5v4M2.5 12h4M17.5 12h4"></path><circle cx="12" cy="12" r="8.2" stroke-dasharray="1.5 3.2"></circle></svg></button><div class="sound-control" id="sound-control"><button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="false" aria-label="Undeafen ambient sound" title="Undeafen ambient sound"><svg class="sound-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13v-1a8 8 0 0 1 16 0v1M4 13v3a2 2 0 0 0 2 2h1v-5H4Zm16 0v3a2 2 0 0 1-2 2h-1v-5h3Z"/><path class="sound-slash" d="M4 4l16 16"/></svg></button><label class="sound-select-wrap" for="sound-track"><span class="sr-only">Background audio</span><select id="sound-track" aria-label="Choose background audio"><option value="brown-noise.mp3">BROWN NOISE</option><option value="rain.mp3">RAIN</option><option value="deep-space.mp3">DEEP SPACE</option><option value="night-drive.mp3">NIGHT DRIVE</option><option value="low-frequency.mp3">LOW FREQUENCY</option></select></label><label class="volume-control" for="sound-volume"><span class="volume-label">VOL <span id="sound-volume-value">18%</span></span><span class="volume-slider" id="volume-slider"><span class="volume-slider-track"><span class="volume-slider-fill"></span><span class="volume-slider-thumb"></span></span><input id="sound-volume" type="range" min="0" max="100" value="18" step="1" aria-label="Background audio volume"></span></label><div class="audio-now-playing" id="audio-now-playing" aria-live="polite"><div class="audio-now-playing-copy"><span>NOW PLAYING</span><strong id="audio-track-name">BROWN NOISE</strong></div><div class="audio-visualizer" id="audio-visualizer" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div><button class="command-trigger" id="command-trigger" type="button" aria-label="Open command palette">⌘K</button><button class="mobile-menu-trigger" id="mobile-menu-trigger" type="button" aria-expanded="false" aria-controls="mobile-menu">MENU</button></div></div></nav><div class="mobile-menu" id="mobile-menu" aria-hidden="true"><div class="mobile-menu-backdrop" data-mobile-menu-close></div><div class="mobile-menu-panel" role="dialog" aria-modal="true" aria-label="Mobile navigation"><div class="mobile-menu-head"><span>NAVIGATION</span><button id="mobile-menu-close" type="button">ESC</button></div><div class="mobile-menu-links"><a href="index.html">Home </a><a href="about.html">About </a><a href="work.html">Work </a><a href="system.html">System </a><a href="lab.html">Lab </a><a href="contact.html">Contact </a><button class="mobile-theme-toggle" id="mobile-theme-toggle" type="button">LIGHT THEME </button></div><div class="mobile-menu-foot"><span>⌘K / COMMAND PALETTE</span><span>F / FOCUS</span></div></div></div><main class="page-main"><section id="about" class="section">
+            <div class="section-header reveal">
+                
+                <h2>Profile</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="profile-grid">
+                <div class="profile-statement reveal">
+                    <p class="large-copy">
+                        A developer who likes making <em>useful things</em>,
+                        exploring unfamiliar technology, and pushing small ideas
+                        until they become real projects.
+                    </p>
+                    <p class="muted-copy">
+                        My work sits between engineering and experimentation:
+                        practical enough to ship, curious enough to stay interesting.
+                    </p>
+                </div>
+
+                <div class="profile-aside reveal">
+                    <div class="data-row">
+                        <span>FOCUS</span>
+                        <strong>Full-Stack / Systems</strong>
+                    </div>
+                    <div class="data-row">
+                        <span>STATUS</span>
+                        <strong class="live"><i></i> Building</strong>
+                    </div>
+                    <div class="data-row">
+                        <span>CONTACT</span>
+                        <a href="mailto:quehole13@gmail.com">quehole13@gmail.com ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-terminal reveal">
+                <div class="about-terminal-head"><span>PROFILE / INTERACTIVE</span><span>TYPE A COMMAND</span></div>
+                <div class="about-terminal-output" id="about-terminal-output">Try <strong>whoami</strong>, <strong>focus</strong>, <strong>experience</strong> or <strong>stack</strong>.</div>
+                <form class="about-terminal-input" id="about-terminal-form">
+                    <span>$</span><input id="about-terminal-command" autocomplete="off" spellcheck="false" placeholder="whoami" aria-label="About terminal command">
+                </form>
+            </div>
+        </section><section class="section services-section" id="services">
+            <div class="services-intro reveal">
+                <h2>Services built for <span>impact</span></h2>
+                <p>End-to-end studio capabilities  /  we take ideas from concept to<br class="services-break"> deployment with the same obsessive care at every step.</p>
+            </div>
+
+            <div class="services-grid reveal">
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.8 12h16.4M12 3.5c2.2 2.35 3.25 5.2 3.25 8.5S14.2 18.15 12 20.5C9.8 18.15 8.75 15.3 8.75 12S9.8 5.85 12 3.5ZM4.9 7.8h14.2M4.9 16.2h14.2"/></svg>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Performance-obsessed, visually exceptional web applications. From marketing sites to complex web apps  /  every pixel intentional, every interaction polished.</p>
+                    <ul>
+                        <li>Next.js / React / Vue</li>
+                        <li>Edge-deployed, 100 Lighthouse</li>
+                        <li>Headless CMS Integration</li>
+                        <li>API Design &amp; Integration</li>
+                        <li>Animation &amp; Micro-interactions</li>
+                    </ul>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M7.2 8.2h9.6l2.1 2.3-.8 5.1-3.3-.7-2.8 1.9-2.8-1.9-3.3.7-.8-5.1 2.1-2.3Z"/><path d="M8.1 5.2v3M6.6 6.7h3M16.8 6.1l.1.1M18.2 7.4l.1.1"/></svg>
+                    </div>
+                    <h3>Game Development</h3>
+                    <p>Battle-tested game systems built for scale. Multiplayer architectures, Roblox experiences, and custom game engines designed for hundreds of thousands of concurrent players.</p>
+                    <ul>
+                        <li>Roblox / Lua Game Systems</li>
+                        <li>Multiplayer Networking</li>
+                        <li>Server-Authoritative Logic</li>
+                        <li>Economy &amp; Progression Design</li>
+                        <li>Anti-Cheat Architecture</li>
+                    </ul>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="m12 3 1.55 5.45L19 10l-5.45 1.55L12 17l-1.55-5.45L5 10l5.45-1.55L12 3Z"/><path d="m18.2 15.8.65 2.35 2.35.65-2.35.65-.65 2.35-.65-2.35-2.35-.65 2.35-.65.65-2.35Z"/></svg>
+                    </div>
+                    <h3>UI / UX Design</h3>
+                    <p>Interfaces that don't just look exceptional  /  they convert, retain, and delight. Every design decision rooted in behavior, psychology, and craft.</p>
+                    <ul>
+                        <li>Design Systems at Scale</li>
+                        <li>Figma Prototyping</li>
+                        <li>User Flow Optimization</li>
+                        <li>Component Library Creation</li>
+                        <li>Brand Identity &amp; Motion</li>
+                    </ul>
+                </article>
+            </div>
+        </section><section class="section learning-section" id="learning">
+            <div class="section-header reveal"><h2>Experiment Tracks</h2><div class="section-line"></div></div>
+            <div class="track-grid reveal" id="experiment-tracks"></div>
+        </section><section class="section constellation-section" id="stack-map">
+            <div class="section-header reveal">
+                
+                <h2>Skill Constellation</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="constellation reveal" aria-label="Interactive technology map">
+                <button class="constellation-node node-js" data-skill="JavaScript">JavaScript</button>
+                <button class="constellation-node node-ts" data-skill="TypeScript">TypeScript</button>
+                <button class="constellation-node node-node" data-skill="Node.js">Node.js</button>
+                <button class="constellation-node node-python" data-skill="Python">Python</button>
+                <button class="constellation-node node-discord" data-skill="Discord.js">Discord.js</button>
+                <button class="constellation-node node-web" data-skill="Web">Web</button>
+                <div class="constellation-core">BUILD<br><span>SYSTEMS</span></div>
+                <div class="constellation-info" id="constellation-info">SELECT A NODE TO INSPECT</div>
+            </div>
+        </section></main><div class="diagnostics-modal" id="diagnostics-modal" aria-hidden="true"><div class="diagnostics-backdrop"></div><div class="diagnostics-dialog"><div class="terminal-bar"><div class="terminal-lights"><i></i><i></i><i></i></div><span id="diagnostics-title">system://diagnostics</span><button id="diagnostics-close" type="button">ESC</button></div><div class="diagnostics-body" id="diagnostics-body"></div></div></div><div class="developer-mode-indicator" id="developer-mode-indicator">DEVELOPER MODE / ENABLED</div><div class="developer-panel" id="developer-panel" aria-hidden="true">
+        <div class="developer-panel-inner">
+            <div class="terminal-bar"><div class="terminal-lights"><i></i><i></i><i></i></div><span>dev://internal</span><button id="developer-panel-close" type="button">ESC</button></div>
+            <div class="developer-panel-content">
+                <span>INTERNAL SYSTEMS</span><h2>Developer Mode</h2><p>Experimental controls exposed. These tools only alter the interface locally.</p>
+                <div class="developer-tools">
+                    <button data-dev-action="inspect">INSPECT UI</button><button data-dev-action="orbit">ORBIT SHIFT</button><button data-dev-action="matrix">MATRIX</button><button data-dev-action="debug">DEBUG STATE</button>
+                </div>
+                <pre id="developer-output">$ sudo mode
+access granted</pre>
+            </div>
+        </div>
+    </div><div class="build-mode-indicator" id="build-mode-indicator">BUILD MODE / INTERNALS EXPOSED</div><div class="shortcut-overlay" id="shortcut-overlay" aria-hidden="true">
+        <div class="shortcut-dialog">
+            <div class="terminal-bar"><div class="terminal-lights"><i></i><i></i><i></i></div><span>shortcuts://portfolio</span><button id="shortcut-close" type="button">ESC</button></div>
+            <div class="shortcut-grid">
+                <span>CTRL + K</span><b>COMMAND PALETTE</b><span>CTRL + /</span><b>TERMINAL</b><span>F</span><b>FOCUS MODE</b><span>J / K</span><b>SCROLL</b><span>?</span><b>SHORTCUTS</b><span>CTRL + SHIFT + D</span><b>BUILD MODE</b>
+            </div>
+        </div>
+    </div><div class="unknown-overlay" id="unknown-overlay" aria-hidden="true">
+        <div class="unknown-dialog"><div class="terminal-bar"><div class="terminal-lights"><i></i><i></i><i></i></div><span>unknown://system</span><button id="unknown-close" type="button">ESC</button></div><div class="unknown-body"><span>ROUTE FOUND</span><h2>UNKNOWN SYSTEM</h2><p>This interface was not indexed.</p><pre>$ whoami
+visitor
+
+$ status
+ACTIVE
+
+$ exit
+Route remains open.</pre></div></div>
+    </div><div class="project-terminal" id="project-terminal" aria-hidden="true">
+        <div class="project-terminal-dialog" role="dialog" aria-modal="true">
+            <div class="terminal-bar"><div class="terminal-lights"><i></i><i></i><i></i></div><span>casefile://szh</span><button id="project-terminal-close" type="button">ESC</button></div>
+            <div class="project-terminal-body" id="project-terminal-body"></div>
+            <div class="project-terminal-input"><span>$</span><input id="project-terminal-input" autocomplete="off" spellcheck="false" placeholder="type overview, architecture, technology, website..." aria-label="Project case file command"></div>
+        </div>
+    </div><div class="case-study-modal" id="case-study-modal" aria-hidden="true">
+        <div class="case-study-backdrop" data-case-close></div>
+        <div class="case-study-dialog" role="dialog" aria-modal="true" aria-labelledby="case-study-title">
+            <div class="terminal-bar"><div class="terminal-lights"><i></i><i></i><i></i></div><span id="case-study-route">casefile://project</span><button id="case-study-close" type="button">ESC</button></div>
+            <div class="case-study-body">
+                <div class="case-study-kicker" id="case-study-kicker">PROJECT CASE FILE</div>
+                <h2 id="case-study-title">PROJECT</h2>
+                <p class="case-study-summary" id="case-study-summary"></p>
+                <div class="case-study-grid">
+                    <div><span>TYPE</span><strong id="case-study-type"></strong></div>
+                    <div><span>STATUS</span><strong id="case-study-status"></strong></div>
+                    <div><span>STACK</span><strong id="case-study-stack"></strong></div>
+                    <div><span>FOCUS</span><strong id="case-study-focus"></strong></div>
+                </div>
+                <div class="case-study-copy"><span>WHAT I BUILT</span><p id="case-study-build"></p></div>
+                <div class="case-study-actions"><a id="case-study-link" href="#" target="_blank" rel="noopener">VISIT PROJECT <span>↗</span></a><button id="case-study-close-bottom" type="button">CLOSE</button></div>
+            </div>
+        </div>
+    </div><div class="command-palette" id="command-palette" aria-hidden="true"><div class="palette-backdrop" data-palette-close></div><div class="palette-dialog" role="dialog" aria-modal="true" aria-labelledby="palette-title"><div class="palette-header"><div><span class="palette-kicker">COMMAND</span><h2 id="palette-title">What do you want to open?</h2></div><button id="palette-close" class="palette-close" type="button">ESC</button></div><div class="palette-search-wrap"><span>/</span><input id="palette-search" type="search" autocomplete="off" placeholder="Search commands..." aria-label="Search commands"><kbd>ESC</kbd></div><div class="palette-list" id="palette-list" role="listbox" aria-label="Commands"></div><div class="palette-footer"><span>↑↓ navigate</span><span>↵ select</span><span>ESC close</span></div></div></div><footer><div>MOHAMMAD ABDULLAH</div><div>© 2026 / BUILT WITH INTENT</div><div class="footer-hint">SOUND IS OPTIONAL / FOCUS WITH <span>F</span></div></footer><script src="data.js"></script>
+<script src="js/core.js"></script>
+<script src="js/terminal.js"></script>
+<script src="js/palette.js"></script>
+<script src="js/integrations.js"></script>
+<script src="js/interface.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/focus.js"></script>
+<script src="js/projects.js"></script>
+<script src="js/environment.js"></script>
+<script src="js/graphs.js"></script>
+<script src="js/data-systems.js"></script>
+<script src="js/activity.js"></script></body></html>

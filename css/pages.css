@@ -1,0 +1,5 @@
+/* Multi-page layout and shared navigation */
+.page-main{width:min(var(--max),calc(100% - 56px));margin:0 auto;padding-top:90px;position:relative;z-index:1}.page-main>.section:first-child{padding-top:72px}.page-main>.hero{min-height:calc(100vh - 20px)}
+.site-nav .nav-links a.active,.site-nav .nav-links a[aria-current="page"]{color:var(--text);}
+.boot-mark img{display:block;width:72px;height:72px;object-fit:contain}.os-mark img{display:block;width:42px;height:42px;object-fit:contain}.case-logo{display:inline-flex;align-items:center;gap:10px}.case-logo img{width:28px;height:28px;object-fit:contain}.page-main .presence{margin-top:0}.page-main .section{scroll-margin-top:90px}
+@media(max-width:850px){.page-main{width:min(var(--max),calc(100% - 32px));padding-top:78px}.page-main>.section:first-child{padding-top:54px}}

@@ -1,0 +1,120 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#080808"><meta name="description" content="Mohammad Abdullah / developer environment"><link rel="icon" type="image/svg+xml" href="assets/logo.svg"><script>try{if(localStorage.getItem("portfolio-theme")==="light")document.documentElement.classList.add("light-theme-preload")}catch{}</script><title>Mohammad Abdullah / Home</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body data-page="home"><div class="boot-screen" id="boot-screen" aria-hidden="true"><div class="boot-inner"><div class="boot-mark"><img src="assets/logo.svg" alt="Mohammad Abdullah logo"></div><div class="boot-line"><span>BOOT</span><i></i><strong id="boot-message">INITIALIZING INTERFACE</strong></div><div class="boot-progress"><i id="boot-progress-bar"></i></div></div></div><div class="noise" aria-hidden="true"></div><div class="custom-cursor" aria-hidden="true"></div><div class="custom-cursor-dot" aria-hidden="true"></div><nav class="site-nav"><div class="nav-content"><div class="nav-left"><a class="logo" href="index.html" aria-label="Mohammad Abdullah home"><img src="assets/logo.svg" alt="Mohammad Abdullah logo"></a><span class="nav-status"><i></i> AVAILABLE</span><span class="nav-clock" id="clock">00:00:00</span></div><div class="nav-links"><a data-page="home" href="index.html">Home</a><a data-page="about" href="about.html">About</a><a data-page="work" href="work.html">Work</a><a data-page="system" href="system.html">System</a><a data-page="lab" href="lab.html">Lab</a><a data-page="contact" href="contact.html">Contact</a></div><div class="nav-right"><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false" title="Switch theme"><svg viewBox="0 0 24 24" aria-hidden="true"><circle class="sun-core" cx="12" cy="12" r="3.5"></circle><g class="sun-rays"><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6-1.6"></path></g><path class="moon-shape" d="M19 14.4A7.2 7.2 0 0 1 9.6 5a7.7 7.7 0 1 0 9.4 9.4Z"></path></svg></button><button class="nav-control" id="focus-toggle" type="button" aria-pressed="false" aria-label="Enable focus mode" title="Enable focus mode"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2"></circle><path d="M12 2.5v4M12 17.5v4M2.5 12h4M17.5 12h4"></path><circle cx="12" cy="12" r="8.2" stroke-dasharray="1.5 3.2"></circle></svg></button><div class="sound-control" id="sound-control"><button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="false" aria-label="Undeafen ambient sound" title="Undeafen ambient sound"><svg class="sound-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13v-1a8 8 0 0 1 16 0v1M4 13v3a2 2 0 0 0 2 2h1v-5H4Zm16 0v3a2 2 0 0 1-2 2h-1v-5h3Z"/><path class="sound-slash" d="M4 4l16 16"/></svg></button><label class="sound-select-wrap" for="sound-track"><span class="sr-only">Background audio</span><select id="sound-track" aria-label="Choose background audio"><option value="brown-noise.mp3">BROWN NOISE</option><option value="rain.mp3">RAIN</option><option value="deep-space.mp3">DEEP SPACE</option><option value="night-drive.mp3">NIGHT DRIVE</option><option value="low-frequency.mp3">LOW FREQUENCY</option></select></label><label class="volume-control" for="sound-volume"><span class="volume-label">VOL <span id="sound-volume-value">18%</span></span><span class="volume-slider" id="volume-slider"><span class="volume-slider-track"><span class="volume-slider-fill"></span><span class="volume-slider-thumb"></span></span><input id="sound-volume" type="range" min="0" max="100" value="18" step="1" aria-label="Background audio volume"></span></label><div class="audio-now-playing" id="audio-now-playing" aria-live="polite"><div class="audio-now-playing-copy"><span>NOW PLAYING</span><strong id="audio-track-name">BROWN NOISE</strong></div><div class="audio-visualizer" id="audio-visualizer" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div><button class="command-trigger" id="command-trigger" type="button" aria-label="Open command palette">⌘K</button><button class="mobile-menu-trigger" id="mobile-menu-trigger" type="button" aria-expanded="false" aria-controls="mobile-menu">MENU</button></div></div></nav><div class="mobile-menu" id="mobile-menu" aria-hidden="true"><div class="mobile-menu-backdrop" data-mobile-menu-close></div><div class="mobile-menu-panel" role="dialog" aria-modal="true" aria-label="Mobile navigation"><div class="mobile-menu-head"><span>NAVIGATION</span><button id="mobile-menu-close" type="button">ESC</button></div><div class="mobile-menu-links"><a href="index.html">Home </a><a href="about.html">About </a><a href="work.html">Work </a><a href="system.html">System </a><a href="lab.html">Lab </a><a href="contact.html">Contact </a><button class="mobile-theme-toggle" id="mobile-theme-toggle" type="button">LIGHT THEME </button></div><div class="mobile-menu-foot"><span>⌘K / COMMAND PALETTE</span><span>F / FOCUS</span></div></div></div><main class="page-main"><section class="hero" id="top"><div class="liquid-orb" aria-hidden="true"><div class="orb-core"></div><div class="orb-highlight"></div><div class="orb-ring orb-ring-a"></div><div class="orb-ring orb-ring-b"></div></div><div class="hero-copy reveal"><div class="eyebrow">DIGITAL BUILDER / DHK, BD</div><h1>Mohammad<br><span>Abdullah</span></h1><div class="hero-bottom"><div><p class="role">FULL-STACK DEVELOPER</p><p class="hero-description">I build web applications, Discord systems, automation and custom tools / turning ideas into things that work.</p></div><div class="hero-actions"><a class="button button-primary" href="work.html"><span>Explore work</span><b>→</b></a><a class="button button-ghost" href="contact.html"><span>Get in touch</span><b>↗</b></a></div></div></div></section><section class="section developer-os-section" id="command-center">
+            <div class="section-header reveal"><h2>Developer OS</h2><div class="section-line"></div></div>
+            <div class="os-grid reveal">
+                <article class="os-panel os-primary">
+                    <div class="os-panel-head"><span>COMMAND CENTER</span><span id="os-sync-time">LIVE</span></div>
+                    <div class="os-identity"><span class="os-mark"><img src="assets/logo.svg" alt="Mohammad Abdullah logo"></span><div><strong>MOHAMMAD ABDULLAH</strong><p>FULL-STACK DEVELOPER / SYSTEM BUILDER</p></div></div>
+                    <div class="os-metrics">
+                        <div><span>PROJECTS</span><strong id="os-project-count">05</strong></div>
+                        <div><span>ACTIVE</span><strong id="os-active-count">02</strong></div>
+                        <div><span>EXPERIMENTS</span><strong>05</strong></div>
+                        <div><span>BUILD</span><strong>V27</strong></div>
+                    </div>
+                </article>
+                <article class="os-panel">
+                    <div class="os-panel-head"><span>DEPLOYMENT</span><span id="deployment-state">CHECKING</span></div>
+                    <div class="deployment-row"><span>PORTFOLIO</span><strong><i class="status-led online"></i> ONLINE</strong></div>
+                    <div class="deployment-row"><span>GITHUB</span><strong id="deployment-github">SYNCING</strong></div>
+                    <div class="deployment-row"><span>PUBLIC DEPLOYMENTS</span><strong id="deployment-public">CHECKING</strong></div>
+                    <p class="os-note" id="deployment-note">Public deployment metadata is checked when the API exposes it.</p>
+                </article>
+                <article class="os-panel os-wide">
+                    <div class="os-panel-head"><span>LIVE SNAPSHOT</span><span>LOCAL STATE</span></div>
+                    <div class="snapshot-grid">
+                        <button data-os-target="activity"><span>ACTIVITY</span><strong>OPEN FEED</strong></button>
+                        <button data-os-target="network"><span>NETWORK</span><strong>OPEN GRAPH</strong></button>
+                        <button data-os-target="vault"><span>CODE VAULT</span><strong>OPEN SOURCE</strong></button>
+                        <button data-os-target="build-plan"><span>BUILD WITH ME</span><strong>OPEN PLAN</strong></button>
+                    </div>
+                </article>
+            </div>
+        </section><section class="section now-building" id="building">
+            <div class="section-header reveal">
+                
+                <h2>Now Building</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="building-card reveal">
+                <div>
+                    <span class="building-kicker">ACTIVE / PERSONAL DEVELOPMENT</span>
+                    <h3>SZH</h3>
+                    <p>Continuing to shape the platform, interface and supporting systems while experimenting with new ideas.</p>
+                </div>
+                <div class="building-meta">
+                    <span>FOCUS</span><strong>WEB / SYSTEMS</strong>
+                    <span>STATE</span><strong class="building-live"><i></i> IN DEVELOPMENT</strong>
+                </div>
+            </div>
+        </section><section class="section build-plan-section" id="build-plan">
+            <div class="section-header reveal"><h2>Build With Me</h2><div class="section-line"></div></div>
+            <div class="build-plan-grid reveal" id="build-plan-grid">
+                <article class="build-plan-item"><span>ACTIVE</span><b>SZH</b><p>Platform, interface and supporting systems.</p></article>
+                <article class="build-plan-item"><span>ACTIVE</span><b>PRETEND</b><p>Multifunctional Discord bot and automation systems.</p></article>
+                <article class="build-plan-item"><span>EXPERIMENT</span><b>LAB</b><p>Interactive UI, audio reactivity and future spatial work.</p></article>
+                <article class="build-plan-item"><span>SYSTEM</span><b>PORTFOLIO</b><p>Developer OS, terminal and live data surfaces.</p></article>
+            </div>
+        </section></main><div class="diagnostics-modal" id="diagnostics-modal" aria-hidden="true"><div class="diagnostics-backdrop"></div><div class="diagnostics-dialog"><div class="terminal-bar"><div class="terminal-lights"><i></i><i></i><i></i></div><span id="diagnostics-title">system://diagnostics</span><button id="diagnostics-close" type="button">ESC</button></div><div class="diagnostics-body" id="diagnostics-body"></div></div></div><div class="developer-mode-indicator" id="developer-mode-indicator">DEVELOPER MODE / ENABLED</div><div class="developer-panel" id="developer-panel" aria-hidden="true">
+        <div class="developer-panel-inner">
+            <div class="terminal-bar"><div class="terminal-lights"><i></i><i></i><i></i></div><span>dev://internal</span><button id="developer-panel-close" type="button">ESC</button></div>
+            <div class="developer-panel-content">
+                <span>INTERNAL SYSTEMS</span><h2>Developer Mode</h2><p>Experimental controls exposed. These tools only alter the interface locally.</p>
+                <div class="developer-tools">
+                    <button data-dev-action="inspect">INSPECT UI</button><button data-dev-action="orbit">ORBIT SHIFT</button><button data-dev-action="matrix">MATRIX</button><button data-dev-action="debug">DEBUG STATE</button>
+                </div>
+                <pre id="developer-output">$ sudo mode
+access granted</pre>
+            </div>
+        </div>
+    </div><div class="build-mode-indicator" id="build-mode-indicator">BUILD MODE / INTERNALS EXPOSED</div><div class="shortcut-overlay" id="shortcut-overlay" aria-hidden="true">
+        <div class="shortcut-dialog">
+            <div class="terminal-bar"><div class="terminal-lights"><i></i><i></i><i></i></div><span>shortcuts://portfolio</span><button id="shortcut-close" type="button">ESC</button></div>
+            <div class="shortcut-grid">
+                <span>CTRL + K</span><b>COMMAND PALETTE</b><span>CTRL + /</span><b>TERMINAL</b><span>F</span><b>FOCUS MODE</b><span>J / K</span><b>SCROLL</b><span>?</span><b>SHORTCUTS</b><span>CTRL + SHIFT + D</span><b>BUILD MODE</b>
+            </div>
+        </div>
+    </div><div class="unknown-overlay" id="unknown-overlay" aria-hidden="true">
+        <div class="unknown-dialog"><div class="terminal-bar"><div class="terminal-lights"><i></i><i></i><i></i></div><span>unknown://system</span><button id="unknown-close" type="button">ESC</button></div><div class="unknown-body"><span>ROUTE FOUND</span><h2>UNKNOWN SYSTEM</h2><p>This interface was not indexed.</p><pre>$ whoami
+visitor
+
+$ status
+ACTIVE
+
+$ exit
+Route remains open.</pre></div></div>
+    </div><div class="project-terminal" id="project-terminal" aria-hidden="true">
+        <div class="project-terminal-dialog" role="dialog" aria-modal="true">
+            <div class="terminal-bar"><div class="terminal-lights"><i></i><i></i><i></i></div><span>casefile://szh</span><button id="project-terminal-close" type="button">ESC</button></div>
+            <div class="project-terminal-body" id="project-terminal-body"></div>
+            <div class="project-terminal-input"><span>$</span><input id="project-terminal-input" autocomplete="off" spellcheck="false" placeholder="type overview, architecture, technology, website..." aria-label="Project case file command"></div>
+        </div>
+    </div><div class="case-study-modal" id="case-study-modal" aria-hidden="true">
+        <div class="case-study-backdrop" data-case-close></div>
+        <div class="case-study-dialog" role="dialog" aria-modal="true" aria-labelledby="case-study-title">
+            <div class="terminal-bar"><div class="terminal-lights"><i></i><i></i><i></i></div><span id="case-study-route">casefile://project</span><button id="case-study-close" type="button">ESC</button></div>
+            <div class="case-study-body">
+                <div class="case-study-kicker" id="case-study-kicker">PROJECT CASE FILE</div>
+                <h2 id="case-study-title">PROJECT</h2>
+                <p class="case-study-summary" id="case-study-summary"></p>
+                <div class="case-study-grid">
+                    <div><span>TYPE</span><strong id="case-study-type"></strong></div>
+                    <div><span>STATUS</span><strong id="case-study-status"></strong></div>
+                    <div><span>STACK</span><strong id="case-study-stack"></strong></div>
+                    <div><span>FOCUS</span><strong id="case-study-focus"></strong></div>
+                </div>
+                <div class="case-study-copy"><span>WHAT I BUILT</span><p id="case-study-build"></p></div>
+                <div class="case-study-actions"><a id="case-study-link" href="#" target="_blank" rel="noopener">VISIT PROJECT <span>↗</span></a><button id="case-study-close-bottom" type="button">CLOSE</button></div>
+            </div>
+        </div>
+    </div><div class="command-palette" id="command-palette" aria-hidden="true"><div class="palette-backdrop" data-palette-close></div><div class="palette-dialog" role="dialog" aria-modal="true" aria-labelledby="palette-title"><div class="palette-header"><div><span class="palette-kicker">COMMAND</span><h2 id="palette-title">What do you want to open?</h2></div><button id="palette-close" class="palette-close" type="button">ESC</button></div><div class="palette-search-wrap"><span>/</span><input id="palette-search" type="search" autocomplete="off" placeholder="Search commands..." aria-label="Search commands"><kbd>ESC</kbd></div><div class="palette-list" id="palette-list" role="listbox" aria-label="Commands"></div><div class="palette-footer"><span>↑↓ navigate</span><span>↵ select</span><span>ESC close</span></div></div></div><footer><div>MOHAMMAD ABDULLAH</div><div>© 2026 / BUILT WITH INTENT</div><div class="footer-hint">SOUND IS OPTIONAL / FOCUS WITH <span>F</span></div></footer><script src="data.js"></script>
+<script src="js/core.js"></script>
+<script src="js/terminal.js"></script>
+<script src="js/palette.js"></script>
+<script src="js/integrations.js"></script>
+<script src="js/interface.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/focus.js"></script>
+<script src="js/projects.js"></script>
+<script src="js/environment.js"></script>
+<script src="js/graphs.js"></script>
+<script src="js/data-systems.js"></script>
+<script src="js/activity.js"></script></body></html>
